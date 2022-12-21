@@ -1,0 +1,458 @@
+@import '../../../variables';
+
+.aboutUs,
+.contactUs,
+.faq {
+  .mission-container {
+    position: relative;
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 0;
+    display: block;
+
+    .background {
+      max-height: 18vw;
+      height: auto;
+      width: 100%;
+      object-fit: cover;
+      // background: #000000 0% 0% no-repeat padding-box;
+      // border: 1px solid #707070;
+      // opacity: 1;
+      filter: brightness(0.65);
+    }
+
+    .bigTitle {
+      position: absolute;
+      top: 0%;
+      font: normal normal bold 40px/80px Helvetica;
+      text-align: center;
+      color: white;
+      width: 100%;
+      letter-spacing: 2px;
+      opacity: 1;
+    }
+
+    .bigDescription {
+      position: absolute;
+      top: 30%;
+      font: normal normal bold 40px/80px Helvetica;
+      text-align: center;
+      color: white;
+      width: 100%;
+      letter-spacing: 2px;
+      opacity: 1;
+    }
+  }
+
+  .title1 {
+    text-align: center;
+    font: normal normal bold 36px/80px Helvetica;
+    letter-spacing: 1.8px;
+    color: #114b5f;
+    opacity: 1;
+    // padding-top:5px;
+  }
+
+  .MS {
+    // padding: 0 430px;
+    // padding-top:5px;
+    margin: 0 auto;
+    max-width: 995px;
+    left: 0px;
+    opacity: 1;
+  }
+
+  .MS-Description {
+    // max-width: 860px;
+    text-align: center;
+    font: normal normal bold 21px/40px Helvetica;
+    // font-size: 18px;
+    font-weight: bold;
+    // line-height: 30px;
+    letter-spacing: 0px;
+    color: #4d4d4d;
+    opacity: 1;
+  }
+
+  .title {
+    text-align: left;
+    font: normal normal bold 23px/40px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+  }
+
+  .image {
+    width: 496px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-left: 12px;
+  }
+
+  /*.title{
+    font-size: 24px;
+    font-weight: bold;
+}*/
+  .description {
+    // font-size: 20px;
+    // color: grey;
+    width: 462px;
+    text-align: left;
+    font: normal normal bold 20px/40px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #525252;
+    opacity: 1;
+  }
+
+  .space {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+
+  .partners {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 60px 0;
+
+    div {
+      width: 100%;
+      $size: 150px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, $size);
+      justify-content: center;
+      gap: 10px;
+      align-items: center;
+
+      img {
+        // max-height: 80px;
+        // width: auto;
+        // height: auto;
+        max-height: 80px;
+        width: 80px;
+        object-fit: cover;
+        margin-left: 5px;
+        margin-right: 5px;
+        transition: transform 0.5s;
+      }
+    }
+  }
+
+  .interviews {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 60px 0;
+
+    div {
+      width: 100%;
+      $size: 150px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, $size);
+      justify-content: center;
+      gap: 10px;
+
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        :hover > img {
+          transform: scale(1.1);
+        }
+
+        img {
+          max-height: 80px;
+          max-width: 115px;
+          object-fit: cover;
+          margin-left: 5px;
+          margin-right: 5px;
+          transition: transform 0.5s;
+        }
+      }
+    }
+  }
+
+  .centering {
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(1);
+    max-width: 1080px;
+    gap: 10px;
+    margin: auto;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: row;
+
+    .MuiPaper-elevation1 {
+      box-shadow: none;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .InfoTextColumnWeb {
+    margin: 0 auto;
+    max-width: 1024px;
+  }
+
+  .InfoTextColumnMobile {
+    display: none;
+  }
+
+  .tinySpace {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .aboutUs,
+  .contactUs,
+  .faq {
+    .mission-container {
+      position: relative;
+      width: 100%;
+
+      .background {
+        max-height: 30vw;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .bigTitle {
+        font-size: 64px;
+      }
+    }
+
+    .MS {
+      padding: 0;
+    }
+
+    .card-container {
+      .main {
+        // position: relative;
+
+        .image {
+          // display: absolute;
+          top: 0%;
+          width: 300px;
+          height: 172px;
+          // padding-left:18px;
+        }
+      }
+    }
+
+    //   .image {
+    //     width: 300px;
+    //     height: 150px;
+    //     object-fit: cover;
+    //   }
+
+    //   .InfoTextWrapper{
+    //       margin:0px;
+
+    //   }
+
+    .aboutUs {
+      .title {
+        font: normal normal bold 16px Helvetica;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        width: 100%;
+        justify-content: center;
+        max-width: 338px;
+        padding-top: 15px;
+      }
+
+      .description {
+        // font-size: 14px;
+        width: 338px;
+        // justify-content: center;
+        align-items: center;
+        text-align: left;
+        font: normal normal bold 15px Helvetica Neue;
+        letter-spacing: 0px;
+        color: #525252;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .aboutUs,
+  .contactUs,
+  .faq {
+    .bigTitle {
+      font-size: 12px;
+    }
+
+    .bigDescription {
+      font-size: 24px;
+    }
+  }
+}
+
+@media all and (max-width: 480px) {
+  .aboutUs,
+  .contactUs,
+  .faq {
+    .MS {
+      padding: 0;
+    }
+
+    .MS-Description {
+      font: normal normal normal 16px/32px Adobe Clean;
+    }
+
+    .image {
+      width: 300px;
+      height: 127px;
+      max-width: 100%;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      max-width: 337px;
+    }
+
+    .title1 {
+      font-size: 18px;
+      margin: 0px;
+    }
+
+    .description {
+      font-size: 15px;
+      max-width: 337px;
+    }
+
+    .smallSpace {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .interviews {
+      margin: 0px;
+
+      div a img {
+        max-height: 120px;
+      }
+    }
+
+    //   .title2{
+    //     width:100%;
+    // }
+
+    .card-container {
+      margin-bottom: 50px;
+      //margin-left: auto;
+      //margin-right: auto;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+
+      .row {
+        display: inline-table;
+      }
+
+      .MuiPaper-elevation1 {
+        box-shadow: none;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      // .main {
+      //     position: relative;
+
+      //     image {
+      //         display: absolute;
+      //         top: 0%;
+      //         width: 300px;
+      //         height: 172px;
+      //     }
+
+      // }
+
+      // .img {
+      //   //   display: flex;
+      //   //   width: 300px;
+      // }
+
+      .space {
+        display: none;
+      }
+    }
+
+    .mission-container {
+      position: relative;
+      width: 100%;
+
+      .bigTitle {
+        font-size: 40px;
+      }
+
+      .bigDescription {
+        font: normal normal normal 24px/48px Adobe Clean;
+      }
+
+      .background {
+        max-height: 80vw;
+        height: auto;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .partners {
+      div {
+        width: 100%;
+        $size: 150px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, $size);
+        justify-content: center;
+        gap: 0;
+
+        img {
+          max-height: 80px;
+          width: auto;
+          object-fit: cover;
+          margin-left: 25px;
+          margin-right: 25px;
+          transition: transform 0.5s;
+        }
+      }
+    }
+
+    .interviews {
+      div {
+        display: flex;
+        flex-direction: row;
+        $size: 80px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, $size);
+        gap: 30px;
+
+        a > img {
+          width: 100px;
+        }
+      }
+    }
+  }
+}
